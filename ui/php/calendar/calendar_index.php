@@ -1945,42 +1945,6 @@ function get_calendar_action() {
     'Condition'=> array ('None') 
   );
 
-  // Admin
-  $actions['calendar']['admin'] = array (
-    'Name'     => $l_header_admin,
-    'Url'      => "$path/calendar/calendar_index.php?action=admin",
-    'Right'    => $cright_read_admin,
-    'Condition'=> array ('all') 
-  );
-
-  // Tag Update
-  $actions['calendar']['tags_update'] = array (
-    'Url'      => "$path/calendar/calendar_index.php?action=tag_update",
-    'Right'    => $cright_write,
-    'Condition'=> array ('None') 
-  );
-
-  // Tag Insert
-  $actions['calendar']['tag_insert'] = array (
-    'Url'      => "$path/calendar/calendar_index.php?action=tag_insert",
-    'Right'    => $cright_write,
-    'Condition'=> array ('None') 
-  );
-
-  // Tag Delete
-  $actions['calendar']['tag_delete'] = array (
-    'Url'      => "$path/calendar/calendar_index.php?action=tag_delete",
-    'Right'    => $cright_write,
-    'Condition'=> array ('None') 
-  );
-
-  // Tag Search
-  $actions['calendar']['tag_search'] = array (
-    'Url'      => "$path/calendar/calendar_index.php?action=tag_search",
-    'Right'    => $cright_write,
-    'Condition'=> array ('None') 
-  );
-
   // Kind Insert
   $actions['calendar']['category1_insert'] = array (
     'Url'      => "$path/calendar/calendar_index.php?action=category_insert",
@@ -2023,6 +1987,42 @@ function get_calendar_action() {
     'Url'      => "$path/calendar/calendar_index.php?action=import",
     'Right'    => $cright_write,
     'Condition'=> array ('all') 
+  );
+
+  // Admin
+  $actions['calendar']['admin'] = array (
+    'Name'     => $l_header_admin,
+    'Url'      => "$path/calendar/calendar_index.php?action=admin",
+    'Right'    => $cright_read_admin,
+    'Condition'=> array ('all') 
+  );
+
+  // Tag Update
+  $actions['calendar']['tags_update'] = array (
+    'Url'      => "$path/calendar/calendar_index.php?action=tag_update",
+    'Right'    => $cright_write,
+    'Condition'=> array ('None') 
+  );
+
+  // Tag Insert
+  $actions['calendar']['tag_insert'] = array (
+    'Url'      => "$path/calendar/calendar_index.php?action=tag_insert",
+    'Right'    => $cright_write,
+    'Condition'=> array ('None') 
+  );
+
+  // Tag Delete
+  $actions['calendar']['tag_delete'] = array (
+    'Url'      => "$path/calendar/calendar_index.php?action=tag_delete",
+    'Right'    => $cright_write,
+    'Condition'=> array ('None') 
+  );
+
+  // Tag Search
+  $actions['calendar']['tag_search'] = array (
+    'Url'      => "$path/calendar/calendar_index.php?action=tag_search",
+    'Right'    => $cright_write,
+    'Condition'=> array ('None') 
   );
   
   // Templates

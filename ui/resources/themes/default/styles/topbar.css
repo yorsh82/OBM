@@ -266,7 +266,7 @@ form {
   position: absolute;
   width: 16.5em;
   left: 8px;
-  top: 80px;
+  top: 83px;
   clear: left;
 
 }
@@ -275,7 +275,7 @@ form {
   z-index:9;
   min-width: 800px;
   margin-left: 17.5em;
-  padding: 80px 1em 0em ;
+  padding: 60px 1em 0em ;
 /*IE workaround*/
   height: auto!important;
   height: 1px;
@@ -283,8 +283,15 @@ form {
 
 #mainContent {
   z-index:0;
+<<<<<<< HEAD
   background-color: #F4F4F4;
   padding: 5px 0 5px;
+=======
+  /*background-color: #FAFAFA;
+  border-left: 1px solid #DDD;
+  border-right: 1px solid #DDD;*/
+  padding: 8px 0 0 0;
+>>>>>>> e453a47... OBMFULL-4100 Test Google style OBM 3.0
 }
 
 #webmail_iframe {
@@ -317,7 +324,11 @@ form {
   background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
   box-shadow: 0px 0px 10px #AAA;
   position: absolute;
+<<<<<<< HEAD
   top: 33.5px;
+=======
+  top: 0px;
+>>>>>>> e453a47... OBMFULL-4100 Test Google style OBM 3.0
   height:auto;
   line-height: 12px;
   left: 0;
@@ -343,10 +354,21 @@ form {
   min-width: 1002px;
   height: 33px;
   line-height: 37px;
+<<<<<<< HEAD
   background: #FAFAFA;
   box-shadow: 0px -1px 5px #BBB inset;
   border-bottom: 1px solid #EEE;
+=======
+  /*background: #FAFAFA;
+  box-shadow: 0px -1px 5px #DDD inset;
+  border-bottom: 1px solid #EEE;*/
+  text-align: right;
+>>>>>>> e453a47... OBMFULL-4100 Test Google style OBM 3.0
   z-index: 999;
+}
+
+#banner ul {
+  display: inline;
 }
 
 #banner div+div li{
@@ -363,23 +385,22 @@ form {
 #allinonemenu{
   display: none;
   position: absolute;
-  top:33px;
+  top:35px;
   max-width: 260px;
   width: auto;
   background-color: #FAFAFA;
   line-height: 16px;
-  border-left: 2px solid #CCC;
-  border-right: 2px solid #CCC;
-  border-bottom: 2px solid #CCC;
+  border: 2px solid #CCC;
   z-index: 9999;
   box-shadow: 0px 0px 5px #CCC;
-  border-radius: 0 0 8px 8px;
+  border-radius: 8px;
   overflow-y: auto;
   overflow-x: hidden;
   padding-top: 0px;
   padding-right: 20px;
   padding-bottom: 15px;
   padding-left: 5px;
+  margin-right: 5px; 
 }
 
 @media screen and (max-height: 600px) {
@@ -456,6 +477,7 @@ form {
 
 #shinnyUserInfos{
   margin-bottom: 15px;
+  text-align: left;
 }
 
 #shinnyUserInfos #avatar{
@@ -519,6 +541,8 @@ form {
 }
 
 #settings ul{
+  display: block;
+  text-align: left;
   list-style: none;
   column-count: 2;
   -moz-column-count: 2;
@@ -533,7 +557,7 @@ form {
 }
 
 #information li {
-  font-size: 11px;
+  font-size: 14px !important;
   color: #333;
   font-weight: bold;
   display: inline; 
@@ -545,6 +569,15 @@ form {
   margin-right: 0;
 }
 
+<<<<<<< HEAD
+=======
+#information li.help a{
+  font-size: 15px;
+  color: #ff670f;
+  margin-right: 15px;
+}
+
+>>>>>>> e453a47... OBMFULL-4100 Test Google style OBM 3.0
 #information li+li+li+li+li {
   margin-right: 0;
 }
@@ -610,12 +643,14 @@ form {
 /* Section menu */
 /* ------------------------------------------------------------------------- */
 #section {
-  display: inline;
   margin: 0;
   padding: 0;
   font-weight: bold;
   list-style-type: none;
-  margin-left: 110px;
+  position: absolute;
+  top: 0;
+  right: 150px;
+  width: 100%;
 }
 
 #section li {
@@ -628,11 +663,11 @@ form {
 #section li a.toplink {
   text-align: center;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   color: #999;
   padding-right: 5px;
   padding-left: 5px;
-  padding-bottom: 4px;
+  padding-top: 8px;
 }
 
 #section li.current {
@@ -658,8 +693,13 @@ form {
 }
 
 #section a.toplink:hover {
+<<<<<<< HEAD
   color: #000;
   border-bottom: 2px solid #368397;
+=======
+  color: #333;
+  border-top: 2px solid #368397;
+>>>>>>> e453a47... OBMFULL-4100 Test Google style OBM 3.0
 }
 /* ------------------------------------------------------------------------- */
 /* Submenu (modules) */
@@ -712,18 +752,23 @@ form {
 #action	{
   width: 99.9%;
   list-style-type: none;  
+<<<<<<< HEAD
   background-color: #FFF;
   background-image: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
   background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
   background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
   background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
   background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
+=======
+  /*background-color: #FAFAFA;*/
+>>>>>>> e453a47... OBMFULL-4100 Test Google style OBM 3.0
   line-height: 30px;
   height: 25px;
   padding: 0;
   margin: 0;
   font-weight: bold;
   font-size:12px;
+<<<<<<< HEAD
   color: #368397;
   background-color: #fff;
   border-radius: 0 15px 0 0;
@@ -731,13 +776,26 @@ form {
   border-left: 1px solid #DDD;
   border-right: 1px solid #DDD;
   border-bottom: 2px solid #DDD;
+=======
+  /*border-radius: 0 15px 0 0;
+  border-left: 1px solid #DDD;
+  border-top: 1px solid #DDD;
+  border-right: 1px solid #DDD;*/
+>>>>>>> e453a47... OBMFULL-4100 Test Google style OBM 3.0
   margin-top: 3px;
 }
 
 #action li {
   display: inline;
+<<<<<<< HEAD
   padding-left: 5px;
   padding-bottom: 3px;
+=======
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 7px;
+  border-top: 2px solid #EEE;
+>>>>>>> e453a47... OBMFULL-4100 Test Google style OBM 3.0
 }
 
 #action li.hover {
@@ -747,15 +805,11 @@ form {
 #action a {  
   font-family: 'Lato',sans-serif, arial;
   text-decoration: none;  
-  color: #777777;   
+  color: #999;   
 }
 
 #action a:link {
-  color: #777777;   
-}
-
-#action a:visited {
-  color: #777777;  
+  color: #999;   
 }
 
 #action a:hover {
@@ -791,11 +845,19 @@ form {
   width: 14.1em;
   padding: 5px;
   margin: 0;
+<<<<<<< HEAD
   margin-bottom: 8px;
   color: #368397;
   box-shadow: 0 0 4px #DDD;
   border: 1px solid #ddd;
   background-color: #FAFAFA;
+=======
+  margin-top: 1em;
+  color: #3F99AF;
+  box-shadow: 1px 1px 3px #DDD;
+  border: 1px solid #DDD;
+  background-color: #FFF;
+>>>>>>> e453a47... OBMFULL-4100 Test Google style OBM 3.0
   list-style-type: none; 
   border-radius: 5px;
   overflow: hidden;
@@ -805,7 +867,11 @@ form {
 .portlet h1 {
   font-weight: bold;
   color: #646567;
+<<<<<<< HEAD
   background-color: #DDD;
+=======
+  /*background-color: #EEE;*/
+>>>>>>> e453a47... OBMFULL-4100 Test Google style OBM 3.0
   border-radius: 4px;
   font-size:100%;
   text-align: left;
@@ -917,12 +983,12 @@ fieldset.detail {
 .detail h1 {
   font-weight: bold;
   border: 1px solid #DDD;
-  background-color: #FFF;
+  /*background-color: #FFF;
   background-image: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
   background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
   background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
   background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);*/
   border-radius: 5px;
   font-size:100%;
   padding: 2px 2px 2px 4px;
@@ -1189,7 +1255,7 @@ input.datePicker {
 }
 
 #datepicker table tbody td.downlight, .miniCalendar tbody td.downlight, .detail tbody td.downlight {
-  background-color: #eff0f2;
+  background-color: #fff;
 }
 
 #datepicker table tbody td.hover, .miniCalendar tbody td.hover, .detail tbody td.hover {
@@ -1745,15 +1811,10 @@ input.datePicker {
 }
 
 .autoCompleteResultBox h2 {
- background-color: #EFF0F2;
  text-align: center;
  min-width: 18em;
  font-size: 80%;
  margin: 0;
-}
-
-input.downlight {
-  color: #ddd !important;
 }
 
 input.validated {
@@ -2210,27 +2271,16 @@ form.button-to input {
 /* ------------------------------------------------------------------------- */
 #advancedSearch .header {
   font-size: 13px;
-  border:2px solid #DDD;
-  border-bottom: none;
-  background-color: #FAFAFA;
-  background-image: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  margin-left:30%;
   min-height: 15px;
-  border-radius: 5px 5px 0 0 ;
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-topright: 5px;
-  -webkit-border-top-left-radius: 5px;
-  -webkit-border-top-right-radius: 5px;
+  
 }
 
 #advancedSearch .header span.title {
   font-size:100%;
   color: #777;
+  padding: 5px 10px 0 10px;
   font-weight:bold;
+  margin-left: 50px;
 }
 
 #advancedSearch .header span.link a {
@@ -2246,21 +2296,9 @@ form.button-to input {
 #advancedSearch .content {
   padding-top: 5px;
   padding-bottom: 5px;
-  border:2px solid #DDD;
+  border-bottom: 2px solid #DDD;
+  border-top: 2px solid #DDD;
   color: #777;
-  background-color: #FAFAFA;
-  background-image: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  border-radius: 5px 0 5px 5px;
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  -webkit-border-top-left-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
 }
 
 #advancedSearch input, select {
@@ -2268,13 +2306,7 @@ form.button-to input {
   padding: 2px 3px;
   margin-bottom: 2px;
   margin-left: 5px;
-  background-color: #FAFAFA;
-  border: 1px solid #DDD;
-  background-image: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
+  background-color: #FFF;
 }
 #advancedSearch input[type=submit]{
   border-width: 1px;

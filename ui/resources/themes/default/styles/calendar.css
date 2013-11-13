@@ -30,6 +30,7 @@
   z-index: 1;
 }
 #calendarLegend div{
+  margin-top: 2em;
   text-shadow: 0 -1px 2px #222;
   font-family: sans;
 }
@@ -79,7 +80,6 @@
 
 .dayLabel {
   text-align:center;
-  background: #F4F4F4;
 }
 
 .dayCol {
@@ -105,7 +105,7 @@
 }
 
 .downlight {
-  background: #F0F0F0;
+  background: #FFF;
 }
 
 .alldayCell {
@@ -131,7 +131,6 @@
 .hourPanel {
   width: 4.5em;
   color: #555;
-  background:#F4F4F4;
 }
 
 .hourLabel {
@@ -1370,7 +1369,6 @@ div.colorHint {
   background-color: #d1d2d4;
   font-weight: bold;
   font-size: 100%;
-  background-color: #FAFAFA;
 }
 
 .infoPopup h2{
@@ -1412,7 +1410,6 @@ div.colorHint {
   border-right: none;
   border-top: none;
   border-left: none;
-  background-color: #F4F4F4;
 }
 
 .eventDetail tbody td {
@@ -1546,18 +1543,18 @@ h1.hoursTitle{
 }
 
 .miniCalendar2 thead{
-  background-color: #FFF;
+  /*background-color: #FFF;
   background-image: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
   background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
   background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
   background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);*/
   color: #666; 
   font-weight: bold;
 }
 
 .miniCalendar2 .labels{
-  background-color: #EEE;
+  /*background-color: #EEE;*/
   border-bottom: 1px solid #aaa;
   color: #666;      
 }
@@ -1630,7 +1627,7 @@ h1.hoursTitle{
   margin: 0;
   margin-bottom: 5px;
   border: 1px solid #CCC;
-  box-shadow: 2px 2px 4px #CCC; 
+  box-shadow: 2px 2px 4px #DDD; 
   border-radius: 5px;
   overflow: hidden;
 }
