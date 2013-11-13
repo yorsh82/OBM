@@ -296,7 +296,7 @@ $l_no_sel_default_view = "Vue par défaut impossible : aucune vue sélectionnée
 $l_conflict_view_label = "$l_view_label : Un conflit a été détecté";
 
 $l_header_planning = "Planning";
-$l_header_meeting = "Recherche disponibilités";
+$l_header_meeting = "Planifier une réunion";
 $l_header_waiting_events = "Evts en attente";
 $l_authorize_list = "Personnes autorisées";
 $l_denie_list = "Personnes non-autorisées";
