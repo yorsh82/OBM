@@ -649,7 +649,7 @@ form {
   list-style-type: none;
   position: absolute;
   top: 0;
-  right: 150px;
+  right: 120px;
   width: 100%;
 }
 
@@ -2215,7 +2215,7 @@ form.button-to input {
 }
 
 #searchHolder {
-  padding: 0.5em 1em 0 0;
+  padding: 0 1em 0 0;
 }
 
 #basicSearch a {
