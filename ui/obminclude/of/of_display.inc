@@ -1492,6 +1492,15 @@ function display_unified_menu($module) {
     )
   );
 
+  array_push( $data["buttons"],
+    array(
+      "name" => "+",
+      "idmore" => "new_meeting",
+      "url" => "$path/calendar/calendar_index.php?action=new",
+      "notifier" => false,
+    )
+  );
+
   $seenTopbarIntro = get_one_user_pref($uid, "seen_topbar_intro");
 
   if (!isset($seenTopbarIntro[$uid]) || $seenTopbarIntro[$uid]["value"] != "yes") {

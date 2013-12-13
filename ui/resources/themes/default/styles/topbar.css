@@ -557,7 +557,7 @@ form {
 }
 
 #information li {
-  font-size: 14px !important;
+  font-size: 15px !important;
   color: #333;
   font-weight: bold;
   display: inline; 
@@ -681,15 +681,7 @@ form {
 
 #section a {
   text-decoration: none;  
-  color: #999;   
-}
-
-#section a:link {
-  color: #999;   
-}
-
-#section a:visited {
-  color: #999;  
+  color: #999;
 }
 
 #section a.toplink:hover {
@@ -2445,4 +2437,37 @@ form.button-to input {
 .intro .highlight {
     font-style: italic;
     font-weight: bold;
+}
+
+#new_meeting {
+  background-color: #3F99AF;
+  background: -moz-linear-gradient(center top , #3F99AF 0%, #368397 100%) #368397;
+  background: linear-gradient(center top , #3F99AF 0%, #368397 100%) #368397;
+  background: -o-linear-gradient(center top , #3F99AF 0%, #368397 100%) #368397;
+  background: -webkit-linear-gradient(top, #3F99AF 0%,#368397 100%) #368397;
+  background: -ms-linear-gradient(center top , #3F99AF 0%, #368397 100%) #368397;
+  text-shadow: 0 -1px 0px #777;
+  border-width: 1px;
+  border-color: #47ADC6 #3F99AF #296472;
+  border-style: solid;
+  border-radius: 5px;
+}
+#new_meeting span {
+  color:#FFF;
+  font-size: 17px;
+  padding: 0 2px 0 2px;
+  font-weight: bold;
+}
+
+#new_meeting:hover {
+  border-width: 1px !important;
+  border-color: #47ADC6 #3F99AF #296472 !important;
+  border-style: solid !important;
+  background-color: #3F99AF;
+  background: linear-gradient(center top , #368397 0%, #3F99AF 100%)#368397;
+  background: -moz-linear-gradient(center top , #368397 0%, #3F99AF 100%)#368397;
+  background: -webkit-linear-gradient(top, #368397 0%,#3F99AF 100%);
+  background: -o-linear-gradient(center top , #368397 0%, #3F99AF 100%) #368397;
+  background: -ms-linear-gradient(center top , #368397 0%, #3F99AF 100%) #368397;
+  cursor: pointer;
 }
