@@ -41,11 +41,11 @@
       {{#buttons}}
 
         {{#notifier}}
-        <li><a href="{{url}}" class="toplink"><span {{>intro}}>{{name}}</span></a> <a href="{{notifier_url}}"> <span id="{{notifier_id}}" class="notification_popup"></span></a></li>
+        <li><a href="{{url}}" class="toplink" title="{{tooltip}}"><span {{>intro}}>{{name}}</span></a> <a href="{{notifier_url}}"> <span id="{{notifier_id}}" class="notification_popup"></span></a></li>
         {{/notifier}}
 
         {{^notifier}}
-        <li><a href="{{url}}" onclick="{{onclick}}" class="toplink" id="{{idmore}}"><span {{>intro}}>{{name}}</span></a></li>
+        <li><a href="{{url}}" onclick="{{onclick}}" class="toplink" id="{{idmore}}" title="{{tooltip}}"><span {{>intro}}>{{name}}</span></a></li>
         {{/notifier}}
 
       {{/buttons}}
@@ -68,7 +68,7 @@
 
       <li style="font-size:13px;">
 
-      <a href="#" onclick="showProfileMenu()">
+      <a href="#" onclick="showProfileMenu()" title="{{tooltip}}">
         <span {{>intro}}>{{login}}</span>
         <img src="{{user_infos.photo_url}}" style="width:25px;border:2px solid #AAA; border-radius:5px;margin-top:-5px;"/>
       </a>

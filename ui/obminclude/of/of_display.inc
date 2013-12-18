@@ -1383,6 +1383,7 @@ function display_unified_menu($module) {
   global $l_logout, $l_profile, $l_scope_update, $l_waiting_events, $l_section_webmail, $l_module_calendar, $l_module_contact, $l_section_more;
   global $perm, $cright_write_admin;
   global $l_intro_webmail, $l_intro_calendar, $l_intro_contacts, $l_intro_moremenu, $l_intro_user;
+  global $l_create_in_mine, $l_contacts, $l_more_fields, $l_my_calendar, $l_mail;
 
   $uid = $obm["uid"];
   $login = $obm['login'];
@@ -1426,6 +1427,7 @@ function display_unified_menu($module) {
   $data[] = array("user_infos");
   $data["user_infos"]["login"] = $login;
   $data["user_infos"]["commonname"] = $common_name;
+  $data["user_infos"]["tooltip"] = $l_profile;
   $data["user_infos"]["email"] = $email;
   $data["user_infos"]["profil"] = $profil;
   $data["user_infos"]["domain"] = $domain;
@@ -1453,6 +1455,7 @@ function display_unified_menu($module) {
       array(
         "name" => $l_section_webmail,
         "url" => "$path/webmail/webmail_index.php",
+        "tooltip" => $l_mail, 
         "notifier" => true,
         "notifier_url" => "$path/webmail/webmail_index.php?_task=mail&_mbox=INBOX",
         "notifier_id" => "bannerUnreadMail",
@@ -1465,6 +1468,7 @@ function display_unified_menu($module) {
     array(
       "name" => $l_module_calendar,
       "url" => "$path/calendar/calendar_index.php",
+      "tooltip" => $l_my_calendar, 
       "notifier" => true,
       "notifier_url" => "$path/calendar/calendar_index.php?action=waiting_events",
       "notifier_id" => "bannerWaitingEvent",
@@ -1476,6 +1480,7 @@ function display_unified_menu($module) {
     array(
       "name" => $l_module_contact,
       "url" => "$path/contact/contact_index.php",
+      "tooltip" => $l_contacts, 
       "notifier" => false,
       "intro-element-id" => "contacts"
     )
@@ -1485,6 +1490,7 @@ function display_unified_menu($module) {
     array(
       "name" => $l_section_more, 
       "idmore" => "moremenu_button",
+      "tooltip" => $l_more_fields, 
       "url" => "#",
       "notifier" => false,
       "onclick" => "showAllInOneMenu()",
@@ -1496,6 +1502,7 @@ function display_unified_menu($module) {
     array(
       "name" => "+",
       "idmore" => "new_meeting",
+      "tooltip" => $l_create_in_mine, 
       "url" => "$path/calendar/calendar_index.php?action=new",
       "notifier" => false,
     )

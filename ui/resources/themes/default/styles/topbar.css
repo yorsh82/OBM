@@ -301,8 +301,8 @@ form {
 
 .spreadLove {
   font-family: sans-serif;
-  border-bottom: 1px solid #777;
-  border-right: 1px solid #777;
+  border-bottom: 1px solid #DDD;
+  border-right: 1px solid #DDD;
   border-bottom-right-radius: 15px;
   font-weight: normal;
   margin: 0;
@@ -310,14 +310,12 @@ form {
   text-align: left;
   position: fixed;
   color: #555;
-  position: absolute;
   top: 0px;
   height:auto;
   line-height: 12px;
-  left: 0;
-  padding-left: 105px;
+  left: 100px;
   font-size: 0.95em;
-  z-index: 9999;
+  z-index: 2;
 }
 
 .spreadLove a {  color: #368397; font-weight: bolder; }
@@ -338,12 +336,12 @@ form {
   height: 33px;
   line-height: 37px;
   text-align: right;
-  background:url(../images/structure/pattern.png) top left repeat #FFF;
   z-index: 999;
 }
 
 #banner ul {
   display: inline;
+  background:url(../images/structure/pattern.png) top left repeat #FFF;
 }
 
 #banner div+div li{
@@ -351,10 +349,10 @@ form {
 }
 
 #obmLogo {
-  position: absolute;
+  position: fixed;
   top:0;
   left:0;
-  z-index: 99;
+  z-index: 999;
 }
 
 #allinonemenu{
@@ -580,8 +578,8 @@ form {
   z-index: 99;
   color:#FFF;
   font-size: 11px;
-  margin-top: 22px;
-  margin-left: -10px;
+  margin-top: 20px;
+  margin-left: -8px;
   padding:3px 6px 3px 6px;
   line-height: 12px;
   border-radius:15px; 
@@ -615,8 +613,8 @@ form {
   list-style-type: none;
   position: absolute;
   top: 0;
-  right: 120px;
-  width: 100%;
+  right: 140px;
+  width: 330px;
 }
 
 #section li {
@@ -633,7 +631,7 @@ form {
   color: #999;
   padding-right: 5px;
   padding-left: 5px;
-  padding-top: 8px;
+  padding-top: 9px;
 }
 
 #section li.current {
@@ -2359,17 +2357,19 @@ form.button-to input {
 }
 
 #new_meeting {
-  background-color: #3F99AF;
-  background: -moz-linear-gradient(center top , #3F99AF 0%, #368397 100%) #368397;
-  background: linear-gradient(center top , #3F99AF 0%, #368397 100%) #368397;
-  background: -o-linear-gradient(center top , #3F99AF 0%, #368397 100%) #368397;
-  background: -webkit-linear-gradient(top, #3F99AF 0%,#368397 100%) #368397;
-  background: -ms-linear-gradient(center top , #3F99AF 0%, #368397 100%) #368397;
+  background: #ff670f;
+
+  background: -moz-linear-gradient(top, #FF8142 0%, #ff670f 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FF8142), color-stop(100%,#ff670f));
+  background: -webkit-linear-gradient(top, #FF8142 0%,#ff670f 100%);
+  background: -o-linear-gradient(top, #FF8142 0%,#ff670f 100%);
+  background: -ms-linear-gradient(top, #FF8142 0%,#ff670f 100%);
+  background: linear-gradient(to bottom, #FF8142 0%,#ff670f 100%);
   text-shadow: 0 -1px 0px #777;
   border-width: 1px;
-  border-color: #47ADC6 #3F99AF #296472;
+  border-color: #FF8142 #ff670f #FF8142;
   border-style: solid;
-  border-radius: 5px;
+  border-radius: 8px 8px 0px 8px;
 }
 #new_meeting span {
   color:#FFF;
@@ -2380,13 +2380,14 @@ form.button-to input {
 
 #new_meeting:hover {
   border-width: 1px !important;
-  border-color: #47ADC6 #3F99AF #296472 !important;
+  border-color: #FF8142 #ff670f #FF8142 !important;
   border-style: solid !important;
-  background-color: #3F99AF;
-  background: linear-gradient(center top , #368397 0%, #3F99AF 100%)#368397;
-  background: -moz-linear-gradient(center top , #368397 0%, #3F99AF 100%)#368397;
-  background: -webkit-linear-gradient(top, #368397 0%,#3F99AF 100%);
-  background: -o-linear-gradient(center top , #368397 0%, #3F99AF 100%) #368397;
-  background: -ms-linear-gradient(center top , #368397 0%, #3F99AF 100%) #368397;
+  background: #ff670f;
+  background: -moz-linear-gradient(top, #ff670f 0%, #FF8142 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff670f), color-stop(100%,#FF8142));
+  background: -webkit-linear-gradient(top, #ff670f 0%,#FF8142 100%);
+  background: -o-linear-gradient(top, #ff670f 0%,#FF8142 100%);
+  background: -ms-linear-gradient(top, #ff670f 0%,#FF8142 100%);
+  background: linear-gradient(to bottom, #ff670f 0%,#FF8142 100%);
   cursor: pointer;
 }
