@@ -366,7 +366,7 @@ form {
   border: 2px solid #CCC;
   z-index: 9999;
   box-shadow: 0px 0px 5px #CCC;
-  border-radius: 8px;
+  border-radius: 0px 8px 8px 8px;
   overflow-y: auto;
   overflow-x: hidden;
   padding-top: 0px;
@@ -613,8 +613,8 @@ form {
   list-style-type: none;
   position: absolute;
   top: 0;
-  right: 140px;
-  width: 330px;
+  right: 150px;
+  width: 360px;
 }
 
 #section li {
@@ -2357,8 +2357,8 @@ form.button-to input {
 }
 
 #new_meeting {
+  margin-left: 10px;
   background: #ff670f;
-
   background: -moz-linear-gradient(top, #FF8142 0%, #ff670f 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FF8142), color-stop(100%,#ff670f));
   background: -webkit-linear-gradient(top, #FF8142 0%,#ff670f 100%);
@@ -2390,4 +2390,8 @@ form.button-to input {
   background: -ms-linear-gradient(top, #ff670f 0%,#FF8142 100%);
   background: linear-gradient(to bottom, #ff670f 0%,#FF8142 100%);
   cursor: pointer;
+}
+
+#print{
+  width: 25px;
 }
