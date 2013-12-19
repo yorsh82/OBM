@@ -564,10 +564,15 @@ function popup(url,name,height,width) {
 function showAllInOneMenu(){
   var positionMoreMenuButton = $('moremenu_button').getPosition().x;
   var allinonemenu = $('allinonemenu');
+  var profileMenu = $('profileMenu');
 
   if ( allinonemenu.isVisible() ){
     allinonemenu.setStyle('display', 'none');
   }else{
+    if(profileMenu.isVisible()){
+      profileMenu.setStyle('display', 'none');
+    }
+
     allinonemenu.setStyle('display', 'block');
     allinonemenu.setStyle('left', positionMoreMenuButton);
   }
@@ -575,9 +580,15 @@ function showAllInOneMenu(){
 
 function showProfileMenu(){
   var profileMenu = $('profileMenu');
+  var allinonemenu = $('allinonemenu');
+
   if ( profileMenu.isVisible() ){
     profileMenu.setStyle('display', 'none');
   } else {
+    if(allinonemenu.isVisible()){
+      allinonemenu.setStyle('display', 'none');
+    }
+
     profileMenu.setStyle('display', 'block');
   }
 }
