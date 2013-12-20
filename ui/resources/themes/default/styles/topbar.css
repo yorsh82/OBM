@@ -315,7 +315,7 @@ form {
   line-height: 12px;
   left: 100px;
   font-size: 0.95em;
-  z-index: 2;
+  z-index: 999;
 }
 
 .spreadLove a {  color: #368397; font-weight: bolder; }
@@ -336,12 +336,12 @@ form {
   height: 33px;
   line-height: 37px;
   text-align: right;
-  z-index: 999;
+  background:url(../images/structure/pattern.png) top left repeat #FFF;
+  z-index: 99;
 }
 
 #banner ul {
   display: inline;
-  background:url(../images/structure/pattern.png) top left repeat #FFF;
 }
 
 #banner div+div li{
@@ -613,8 +613,9 @@ form {
   list-style-type: none;
   position: absolute;
   top: 0;
-  right: 150px;
-  width: 360px;
+  right: 0;
+  width: auto;
+  min-width: 500px;
 }
 
 #section li {
@@ -2356,42 +2357,8 @@ form.button-to input {
     font-weight: bold;
 }
 
-#new_meeting {
-  margin-left: 10px;
-  background: #ff670f;
-  background: -moz-linear-gradient(top, #FF8142 0%, #ff670f 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FF8142), color-stop(100%,#ff670f));
-  background: -webkit-linear-gradient(top, #FF8142 0%,#ff670f 100%);
-  background: -o-linear-gradient(top, #FF8142 0%,#ff670f 100%);
-  background: -ms-linear-gradient(top, #FF8142 0%,#ff670f 100%);
-  background: linear-gradient(to bottom, #FF8142 0%,#ff670f 100%);
-  text-shadow: 0 -1px 0px #777;
-  border-width: 1px;
-  border-color: #FF8142 #ff670f #FF8142;
-  border-style: solid;
-  border-radius: 8px 8px 0px 8px;
-}
-#new_meeting span {
-  color:#FFF;
-  font-size: 17px;
-  padding: 0 2px 0 2px;
-  font-weight: bold;
-}
-
-#new_meeting:hover {
-  border-width: 1px !important;
-  border-color: #FF8142 #ff670f #FF8142 !important;
-  border-style: solid !important;
-  background: #ff670f;
-  background: -moz-linear-gradient(top, #ff670f 0%, #FF8142 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff670f), color-stop(100%,#FF8142));
-  background: -webkit-linear-gradient(top, #ff670f 0%,#FF8142 100%);
-  background: -o-linear-gradient(top, #ff670f 0%,#FF8142 100%);
-  background: -ms-linear-gradient(top, #ff670f 0%,#FF8142 100%);
-  background: linear-gradient(to bottom, #ff670f 0%,#FF8142 100%);
-  cursor: pointer;
-}
-
 #print{
   width: 25px;
+  margin-left: 10px;
+  margin-top: -2px;
 }

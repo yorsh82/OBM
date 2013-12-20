@@ -1332,7 +1332,7 @@ function display_menu($module) {
   }
   if ($display['print_url'] != '') {
     $url = $display['print_url']."&amp;output_target=print";
-    $dis_printer = "<li><a href=\"#\" onclick=\"popup('$url');\" ><img src=\"$ico_print\" alt=\"Print\" id='print' /></a></li>";
+    $dis_printer = "<li><a href=\"#\" onclick=\"popup('$url');\" id='print'><img src=\"$ico_print\" alt=\"Print\"  /></a></li>";
   }
 
   $wait_event = "<li><a id=\"bannerWaitingEvent\" href='".$path."/calendar/calendar_index.php?action=waiting_events'></a></li>";
@@ -1495,16 +1495,6 @@ function display_unified_menu($module) {
       "notifier" => false,
       "onclick" => "showAllInOneMenu()",
       "intro-element-id" => "moremenu"
-    )
-  );
-
-  array_push( $data["buttons"],
-    array(
-      "name" => "+",
-      "idmore" => "new_meeting",
-      "tooltip" => $l_create_in_mine, 
-      "url" => "$path/calendar/calendar_index.php?action=new",
-      "notifier" => false,
     )
   );
 
