@@ -121,7 +121,7 @@ textarea {
 
 input {
   vertical-align: middle;
-  color: #777;
+  color: #999;
   font-size: 100%;
   border: 1px solid #DDD;
   border-radius: 5px;
@@ -159,7 +159,7 @@ input[type="submit"]:hover {
 }
 
 select {
-  color: #636466;
+  color: #777;
   font-size: 90%;
   border: 1px solid #DDD;
   font-weight: bold;
@@ -175,6 +175,13 @@ option[disabled="disabled"] {
 option[default="default"] {
   background-color: #E0E1E3;
   color: #368397;
+}
+
+option::selection {
+  background: #a8d1ff;
+}
+option::-moz-selection {
+  background: #a8d1ff;
 }
 
 h1 {
@@ -770,8 +777,8 @@ form {
   margin: 0;
   margin-top: 1em;
   color: #3F99AF;
-  box-shadow: 1px 1px 3px #DDD;
-  border: 1px solid #DDD;
+  box-shadow: 1px 1px 5px #EEE;
+  border: 1px solid #EEE;
   background-color: #FFF;
   list-style-type: none; 
   border-radius: 5px;
@@ -781,16 +788,17 @@ form {
 
 .portlet h1 {
   font-weight: bold;
-  color: #646567;
-  border-radius: 4px;
+  color: #777;
+  border-bottom: 2px solid #EEE;
   font-size:100%;
   text-align: left;
-  margin:0;
-  padding: 2px 2px 2px 4px;
+  margin: 0 0 4px 0;
+  padding: 3px 2px 3px 4px;
 }
 
 .portlet .handle{
   float: right;
+  margin-top: 1px;
 }
 
 .portlet ul {
@@ -893,12 +901,6 @@ fieldset.detail {
 .detail h1 {
   font-weight: bold;
   border: 1px solid #DDD;
-  /*background-color: #FFF;
-  background-image: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);
-  background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.08) 100%);*/
   border-radius: 5px;
   font-size:100%;
   padding: 2px 2px 2px 4px;
@@ -1404,7 +1406,6 @@ input.datePicker {
   border-spacing:0;
   border: 1px solid #959595;
   border-collapse: collapse;
-  /*table-layout:fixed;*/
 }
 
 .spreadSheet td.hover{
